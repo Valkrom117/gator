@@ -1,5 +1,6 @@
 import { readConfig } from "./config";
 import { addFeed } from "./lib/db/queries/feed";
+import { createFeedFollow } from "./lib/db/queries/feed_follow";
 import { getUserByName } from "./lib/db/queries/user";
 import { Feed, User } from "./lib/db/schema";
 
@@ -21,6 +22,7 @@ export async function handlerAddFeed (cmdName: string, ...args: string[]) {
     const name = args[0];
     const url = args[1];
     const feed = await addFeed(name, url, userId);
+    const feed_follow = await createFeedFollow(userData.id, feed.id)
     printFeed(feed, userData);
 }
 

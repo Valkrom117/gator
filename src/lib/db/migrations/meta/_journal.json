@@ -8,6 +8,13 @@
       "when": 1768247412951,
       "tag": "0000_certain_scourge",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1768280836599,
+      "tag": "0001_blushing_mercury",
+      "breakpoints": true
     }
   ]
 }

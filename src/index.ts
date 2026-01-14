@@ -7,6 +7,8 @@ import { handlerUsers } from "./handler_users";
 import { handlerAgg } from "./handler_agg";
 import { handlerAddFeed } from "./handler_addFeed";
 import { handlerFeeds } from "./handler_feeds";
+import { handlerFollow } from "./handler_follow";
+import { handlerFollowing } from "./handler_following";
 
 
 async function  main() {
@@ -18,6 +20,8 @@ async function  main() {
   registerCommand(registry, "agg", handlerAgg);
   registerCommand(registry, "addfeed", handlerAddFeed);
   registerCommand(registry, "feeds", handlerFeeds);
+  registerCommand(registry, "follow", handlerFollow);
+  registerCommand(registry, "following", handlerFollowing);
   const args = argv.slice(2);
   if (args.length === 0) {
     console.error("Not enough arguments");
