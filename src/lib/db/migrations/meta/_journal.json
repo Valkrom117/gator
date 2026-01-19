@@ -15,6 +15,20 @@
       "when": 1768280836599,
       "tag": "0001_blushing_mercury",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1768609219741,
+      "tag": "0002_productive_scarecrow",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1768763317932,
+      "tag": "0003_wandering_changeling",
+      "breakpoints": true
     }
   ]
 }
